@@ -18,6 +18,8 @@ A simple command-line Weather App built with Python that fetches real-time weath
 - Python 3
 - Requests Library
 - OpenWeather API
+- HTML 
+- CSS
 
 **Sample Menu**
 
