@@ -45,9 +45,64 @@
             </div>
         </div>
         <div>
-            <button class="City-Change">
-                📍
-            </button>
+            <div>
+                <button class="City-Change" onclick="
+                if (selection === true) {
+                    showPopup();
+                    selection = false;
+                } else if (selection === false) {
+                    hidePopup();
+                    selection = true;
+                }
+                    ">
+                    📍
+                </button>
+            </div>
+        <div class="Pop-up">
+            <input class="Search-Bar" type="text" placeholder="🔍 Search city">
+            <div class="City-list">
+                <div class="City-item" onclick="
+                    selectcity('Seoul');
+                    hidePopup();
+                    ">📍Seoul</div>
+                <div class="City-item" onclick="
+                    selectcity('Kochi');
+                    hidePopup();
+                    ">📍Kochi</div>
+                <div class="City-item" onclick="
+                    selectcity('London');
+                    hidePopup();
+                    ">📍London</div>
+                <div class="City-item" onclick="
+                    selectcity('Mumbai');
+                    hidePopup();
+                    ">📍Mumbai</div>
+                <div class="City-item" onclick="
+                    selectcity('Bangalore');
+                    hidePopup();
+                    ">📍Bangalore</div>
+                <div class="City-item" onclick="
+                    selectcity('Chennai');
+                    hidePopup();
+                    ">📍Chennai</div>
+                <div class="City-item" onclick="
+                    selectcity('New York');
+                    hidePopup();
+                    ">📍New York</div>
+                <div class="City-item" onclick="
+                    selectcity('Los Angeles');
+                    hidePopup();
+                    ">📍Los Angeles</div>
+                <div class="City-item" onclick="
+                    selectcity('Delhi');
+                    hidePopup();
+                    ">📍Delhi</div>
+                <div class="City-item" onclick="
+                    selectcity('Madras');
+                    hidePopup();
+                    ">📍Madras</div>
+            </div>
         </div>
+        <script src="Interface.js"></script>
     </body>
 </html>
