@@ -20,6 +20,7 @@ A simple command-line Weather App built with Python that fetches real-time weath
 - OpenWeather API
 - HTML 
 - CSS
+- Java Script
 
 **Sample Menu**
 
