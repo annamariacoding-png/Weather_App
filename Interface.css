@@ -124,11 +124,9 @@ body {
     flex-direction: column;
     padding: 15px;
     display: none;
-    transition-duration: 2s;
 }
 .Pop-up.show {
     display: block;
-    transition-duration: 2s;
 }
 
 .City-item {
