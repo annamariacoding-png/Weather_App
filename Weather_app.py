@@ -1,7 +1,8 @@
 import requests
 print("===== Weather App =====")
+print()
 city = input("City : ")
-api_key = "dc3c53e5dd62e61080da3dea9fd28a94"
+api_key = "Your API KEY"
 url = "https://api.openweathermap.org/data/2.5/weather"
 parameters = {
     "q" : city,
