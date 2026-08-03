@@ -5,7 +5,7 @@ from flask import request, jsonify
 app = Flask(__name__)
 
 def get_weather(city):
-    api_key = "dc3c53e5dd62e61080da3dea9fd28a94"
+    api_key = "API KEY"
     url = "https://api.openweathermap.org/data/2.5/weather"
     parameters = {
         "q" : city,
