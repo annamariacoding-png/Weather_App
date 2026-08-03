@@ -1,10 +1,11 @@
 from flask import Flask, render_template
 import requests
+from datetime import datetime
 from flask import request, jsonify
 app = Flask(__name__)
 
 def get_weather(city):
-    api_key = "API KEY"
+    api_key = "dc3c53e5dd62e61080da3dea9fd28a94"
     url = "https://api.openweathermap.org/data/2.5/weather"
     parameters = {
         "q" : city,
@@ -23,6 +24,8 @@ def index():
 def weather():
     city = request.args.get("city")
     data = get_weather(city)
+    data["sys"]["sunrise"] = datetime.fromtimestamp(data["sys"]["sunrise"]).strftime("%I:%M %p")
+    data["sys"]["sunset"] = datetime.fromtimestamp(data["sys"]["sunset"]).strftime("%I:%M %p")
     return jsonify(data)
  
 if __name__ == "__main__" :
